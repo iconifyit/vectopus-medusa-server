@@ -66,7 +66,10 @@ const plugins = [
 
 module.exports = {
   projectConfig: {
-    cli_migration_dirs: ['node_modules/medusa-marketplace/dist/**/*.migration.js'],
+    cli_migration_dirs: [
+        'node_modules/medusa-marketplace/dist/**/*.migration.js',
+        // './src/modules/**/*.migration.js'
+    ],
     redis_url: REDIS_URL,
     // For more production-like environment install PostgresQL
     database_url: DATABASE_URL,

@@ -9,7 +9,17 @@
         "build": "rm -rf dist && ./node_modules/.bin/tsc -p tsconfig.json",
         "start": "npm run build && NODE_ENV=development node ./dist/main.js",
         "start:watch": "nodemon --watch './src/**/*.ts' --exec 'npm run build && NODE_ENV=development node ./dist/main.js'",
-        "start:prod": "npm run build && NODE_ENV=production node dist/main"
+        "start:prod": "npm run build && NODE_ENV=production node dist/main",
+        "medex:module": "./node_modules/.bin/medex generate --module",
+        "medex:middleware": "./node_modules/.bin/medex generate --middleware",
+        "medex:service": "./node_modules/.bin/medex generate --service",
+        "medex:router": "./node_modules/.bin/medex generate --router",
+        "medex:entity": "./node_modules/.bin/medex generate --entity",
+        "medex:repository": "./node_modules/.bin/medex generate --repository",
+        "medex:migration": "./node_modules/.bin/medex generate --migration",
+        "medex:validator": "./node_modules/.bin/medex generate --validator",
+        "medex:path": "./node_modules/.bin/medex generate --path",
+        "medex:help": "./node_modules/.bin/medex generate --help"
     },
     "dependencies": {
         "@medusajs/medusa": "^1.6.0",

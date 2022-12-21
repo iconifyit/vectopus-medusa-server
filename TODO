@@ -1,3 +1,9 @@
 [ ] notification provider plugin
 [ ] taxProviders provider plugin
 [ ] search engine provider plugin
+[ ] Omit product.collection_id
+[ ] Add product.set_id 
+[ ] Add product.sets to Product
+[ ] Remove products from ProductCollection
+[ ] Add add sets to ProductCollection 
+
